@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class armstrong{
+public static void main(String[] args){
+Scanner scanner=new Scanner(System.in);
+System.out.println("enter number");
+int n=scanner.nextInt();
+int rem,rev=0;
+int org=n;
+while(org!=0){
+rem=n%10;
+rev=rem*rem*rem;
+n=n/10;
+}
+if(rev==n){
+System.out.println("armstrong");
+}
+else{
+System.out.println(" not armstrong");
+}
+}
+}
